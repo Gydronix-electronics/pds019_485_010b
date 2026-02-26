@@ -4997,13 +4997,13 @@ http://www.bccomponents.com/</description>
 <part name="GND5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="+P4" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="3.3V" device=""/>
 <part name="GND6" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
-<part name="CON3" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X05" device="-2" package3d_urn="urn:adsk.eagle:package:4854339/2"/>
+<part name="X3" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_1X05" device="-2" package3d_urn="urn:adsk.eagle:package:4854339/2"/>
 <part name="+P5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="3.3V" device=""/>
 <part name="GND7" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="R3" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0805" package3d_urn="urn:adsk.eagle:package:2539455/2" technology="-1%" value="100R"/>
 <part name="R4" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0805" package3d_urn="urn:adsk.eagle:package:2539455/2" technology="-1%" value="43R"/>
 <part name="R5" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0805" package3d_urn="urn:adsk.eagle:package:2539455/2" technology="-1%" value="43R"/>
-<part name="CON4" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_2X03" device="-PTH-2.54" package3d_urn="urn:adsk.eagle:package:8729607/3"/>
+<part name="X4" library="pinhead" library_urn="urn:adsk.eagle:library:2540341" deviceset="PINHEAD_2X03" device="-PTH-2.54" package3d_urn="urn:adsk.eagle:package:8729607/3"/>
 <part name="+P6" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="3.3V" device=""/>
 <part name="GND8" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="R14" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-0805" package3d_urn="urn:adsk.eagle:package:2539455/2" technology="-1%" value="100R"/>
@@ -5145,7 +5145,7 @@ http://www.bccomponents.com/</description>
 <instance part="GND6" gate="1" x="68.58" y="27.94" smashed="yes">
 <attribute name="VALUE" x="68.58" y="26.67" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="CON3" gate="G$1" x="83.82" y="45.72" smashed="yes" rot="MR180">
+<instance part="X3" gate="G$1" x="83.82" y="45.72" smashed="yes" rot="MR180">
 <attribute name="NAME" x="86.36" y="29.21" size="1.778" layer="95" font="vector" ratio="15" rot="MR180" align="center"/>
 </instance>
 <instance part="+P5" gate="G$1" x="93.98" y="45.72" smashed="yes">
@@ -5175,7 +5175,7 @@ http://www.bccomponents.com/</description>
 <attribute name="TOLERANCE" x="98.806" y="35.052" size="0.762" layer="96" font="vector" rot="R180"/>
 <attribute name="ALLOCATED" x="99.06" y="31.496" size="0.762" layer="97" font="vector" rot="R180" align="center"/>
 </instance>
-<instance part="CON4" gate="G$1" x="114.3" y="66.04" smashed="yes">
+<instance part="X4" gate="G$1" x="114.3" y="66.04" smashed="yes">
 <attribute name="NAME" x="120.904" y="77.47" size="1.778" layer="95" font="vector" ratio="15" align="center"/>
 </instance>
 <instance part="+P6" gate="G$1" x="109.22" y="76.2" smashed="yes">
@@ -5287,13 +5287,13 @@ http://www.bccomponents.com/</description>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="CON3" gate="G$1" pin="3"/>
+<pinref part="X3" gate="G$1" pin="3"/>
 <wire x1="93.98" y1="38.1" x2="91.44" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="132.08" y1="66.04" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="CON4" gate="G$1" pin="6"/>
+<pinref part="X4" gate="G$1" pin="6"/>
 <wire x1="132.08" y1="68.58" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -5353,13 +5353,13 @@ http://www.bccomponents.com/</description>
 <wire x1="43.18" y1="48.26" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CON3" gate="G$1" pin="1"/>
+<pinref part="X3" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="43.18" x2="93.98" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="+P5" gate="G$1" pin="VDD_3V3"/>
 <wire x1="93.98" y1="43.18" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CON4" gate="G$1" pin="1"/>
+<pinref part="X4" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="73.66" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="+P6" gate="G$1" pin="VDD_3V3"/>
 <wire x1="109.22" y1="73.66" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
@@ -5603,21 +5603,21 @@ http://www.bccomponents.com/</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="CON3" gate="G$1" pin="2"/>
+<pinref part="X3" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="40.64" x2="99.06" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="CON3" gate="G$1" pin="4"/>
+<pinref part="X3" gate="G$1" pin="4"/>
 <wire x1="91.44" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="CON3" gate="G$1" pin="5"/>
+<pinref part="X3" gate="G$1" pin="5"/>
 <wire x1="91.44" y1="33.02" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
@@ -5672,7 +5672,7 @@ http://www.bccomponents.com/</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="CON4" gate="G$1" pin="2"/>
+<pinref part="X4" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="73.66" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 </segment>
@@ -5680,20 +5680,20 @@ http://www.bccomponents.com/</description>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
-<pinref part="CON4" gate="G$1" pin="4"/>
+<pinref part="X4" gate="G$1" pin="4"/>
 <wire x1="132.08" y1="71.12" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
-<pinref part="CON4" gate="G$1" pin="3"/>
+<pinref part="X4" gate="G$1" pin="3"/>
 <wire x1="109.22" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="CON4" gate="G$1" pin="5"/>
+<pinref part="X4" gate="G$1" pin="5"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
 </segment>
