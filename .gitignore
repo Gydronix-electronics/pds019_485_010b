@@ -1,0 +1,69 @@
+# Ignore list for Eagle, a PCB layout tool
+
+# Backup files
+*.s#?
+*.b#?
+*.l#?
+*.b$?
+*.s$?
+*.l$?
+*.workspace
+
+# Eagle project file
+# It contains a serial number and references to the file structure
+# on your computer.
+# comment the following line if you want to have your project file included.
+eagle.epf
+
+# Autorouter files
+*.pro
+*.job
+
+# CAM files
+*.$$$
+*.cmp
+*.ly2
+*.l15
+*.sol
+*.plc
+*.stc
+*.sts
+*.crc
+*.crs
+*.dri
+*.gpi
+*.pls
+*.ger
+*.gpi
+*.drd
+*.drd.*
+
+*.s#*
+*.b#*
+
+*.info
+
+*.eps
+
+# file locks introduced since 7.x
+*.lck
+*.lbr
+# SketchUp garbage
+*.skb
+.vs/*
+*.scr
+/doc/*
+/winch/docs/*
+/craft/V2/manf/
+/craft/V2.1/manf/
+/craft/V2.2/manf/
+/craft/V2.1/sim/
+/craft/V1/manf/
+/craft/battery V1/manf
+/craft/battery V1.1/manf
+/winch/discharger/manf
+/winch/Winch_controller_v2/manf
+/manf/*
+*.dtmp
+*.bkp
+*.pdsbak
