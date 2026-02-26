@@ -845,6 +845,15 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="2.2" y1="-1" x2="-2.2" y2="-1" width="0.15" layer="21"/>
 <wire x1="-2.2" y1="-1" x2="-2.2" y2="1" width="0.15" layer="21"/>
 </package>
+<package name="MST-FUSE" library_version="149" library_locally_modified="yes">
+<wire x1="-4.2" y1="2.15" x2="-4.2" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="2.15" x2="4.2" y2="2.15" width="0.127" layer="21"/>
+<wire x1="4.2" y1="2.15" x2="4.2" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="4.2" y1="-2.15" x2="-4.2" y2="-2.15" width="0.127" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1.1"/>
+<pad name="2" x="2.54" y="0" drill="1.1"/>
+<text x="0" y="0" size="1.5" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="C0402" urn="urn:adsk.eagle:package:2539461/2" type="model" library_version="149">
@@ -1650,6 +1659,19 @@ DIN A4, landscape with location and doc. field</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="PACKAGE" value="1206" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-MST" package="MST-FUSE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANF" value="Multicomp" constant="no"/>
+<attribute name="MANF#" value="MST 1.6A 250V" constant="no"/>
 <attribute name="PACKAGE" value="1206" constant="no"/>
 </technology>
 </technologies>
@@ -2621,8 +2643,8 @@ DIN A4, landscape with location and doc. field</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="IRM-05" urn="urn:adsk.eagle:package:52043181/1" type="box" library_version="2">
-<description>&lt;a href = https://www.mean-well.ru/uploads/files/datasheets/IRM-05-12.pdf&gt;datasheet&lt;/a&gt;</description>
+<package3d name="IRM-05" urn="urn:adsk.eagle:package:52043181/2" type="model" library_version="3">
+<description>datasheet</description>
 <packageinstances>
 <packageinstance name="IRM-05"/>
 </packageinstances>
@@ -2643,7 +2665,7 @@ DIN A4, landscape with location and doc. field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="IRM-05-12" urn="urn:adsk.eagle:component:52043182/1" prefix="MODULE" library_version="2">
+<deviceset name="IRM-05-12" urn="urn:adsk.eagle:component:52043182/2" prefix="MODULE" library_version="3">
 <description>5W AC-DC High Reliable PCB-Mount Green Industrial Power Module</description>
 <gates>
 <gate name="G$1" symbol="AC-DC" x="0" y="0"/>
@@ -2657,7 +2679,7 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="G$1" pin="V-" pad="V-"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:52043181/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:52043181/2"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -3535,49 +3557,6 @@ package type OT</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="tmp">
-<packages>
-<package name="MST-FUSE">
-<pad name="1" x="-2.54" y="0" drill="1.1"/>
-<pad name="2" x="2.54" y="0" drill="1.1"/>
-<text x="0" y="0" size="1.5" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
-<wire x1="-4.2" y1="2.15" x2="-4.2" y2="-2.15" width="0.127" layer="21"/>
-<wire x1="-4.2" y1="2.15" x2="4.2" y2="2.15" width="0.127" layer="21"/>
-<wire x1="4.2" y1="2.15" x2="4.2" y2="-2.15" width="0.127" layer="21"/>
-<wire x1="4.2" y1="-2.15" x2="-4.2" y2="-2.15" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="FUSE">
-<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
-<text x="0" y="0" size="1.524" layer="95" font="vector" align="center">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MST1.6A250V" prefix="F">
-<description>&lt;a href =https://static.chipdip.ru/lib/902/DOC011902635.pdf&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="FUSE" x="-2.54" y="2.54"/>
-</gates>
-<devices>
-<device name="-MST" package="MST-FUSE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3591,7 +3570,7 @@ package type OT</description>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="D2" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="SM712" device="" package3d_urn="urn:adsk.eagle:package:3333648/5"/>
-<part name="U5" library="linear regulators" library_urn="urn:adsk.eagle:library:2541155" deviceset="L78L05ACD13TR" device="" package3d_urn="urn:adsk.eagle:package:20898192/5"/>
+<part name="U5" library="linear regulators" library_urn="urn:adsk.eagle:library:2541155" deviceset="L78L05ACD13TR" device="" package3d_urn="urn:adsk.eagle:package:20898192/5" override_package3d_urn="urn:adsk.eagle:package:20898192/7" override_package_urn="urn:adsk.eagle:footprint:4771000/5"/>
 <part name="C10" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="C" device="-0805" package3d_urn="urn:adsk.eagle:package:2539460/3" value="10u"/>
 <part name="C11" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="C" device="-0805" package3d_urn="urn:adsk.eagle:package:2539460/3" value="1u"/>
 <part name="GND1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
@@ -3632,9 +3611,9 @@ package type OT</description>
 </part>
 <part name="L5" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="L" device="-0805" package3d_urn="urn:adsk.eagle:package:32710307/2"/>
 <part name="GND14" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GNDD" device="" value="GNDD"/>
-<part name="MODULE2" library="ac-dc" library_urn="urn:adsk.eagle:library:51565678" deviceset="IRM-05-12" device="" package3d_urn="urn:adsk.eagle:package:52043181/1"/>
+<part name="MODULE2" library="ac-dc" library_urn="urn:adsk.eagle:library:51565678" deviceset="IRM-05-12" device="" package3d_urn="urn:adsk.eagle:package:52043181/2"/>
 <part name="R1" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="R" device="-1206" package3d_urn="urn:adsk.eagle:package:2539464/2" technology="-1%" value="10R"/>
-<part name="F1" library="tmp" deviceset="MST1.6A250V" device="-MST" value="1.6A">
+<part name="F1" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="FUSE" device="-MST" value="1.6A">
 <attribute name="PACKAGE" value="PBF-4"/>
 </part>
 <part name="L1" library="rc" library_urn="urn:adsk.eagle:library:2539423" deviceset="L" device="-0805" package3d_urn="urn:adsk.eagle:package:32710307/2" value="0R"/>
@@ -5017,6 +4996,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>

@@ -3,12 +3,12 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,17 +23,17 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -188,6 +188,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.YnVzaW5lc3M6Z21haWw1NzY2MDI" projecturn="a.YnVzaW5lc3M6Z21haWw1NzY2MDIjMjAyNTA2MzA5NDU5NzA2ODE" f3durn="urn:adsk.wipprod:dm.lineage:6wR3CD-0TlegOzPUEAE_cA" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="772d497e-f2e8-4aa6-9351-c91338e72043" lastsyncedrevisionid="772d497e-f2e8-4aa6-9351-c91338e72043" lastboardhashguid="246c8ac6-2834-ceb7-a27e-213ae3171d19" lastpushedtime="2026-02-26T17:39:43Z" linktopcb3d="true"/>
 <plain>
 <text x="4.75" y="45.75" size="1.3" layer="22" font="vector" ratio="12" rot="MR180" align="center-left">12V</text>
 <text x="4.75" y="43.21" size="1.3" layer="22" font="vector" ratio="12" rot="MR180" align="center-left">GND</text>
@@ -271,6 +272,15 @@ reDesign</text>
 <wire x1="1.65" y1="-0.85" x2="-1.65" y2="-0.85" width="0.127" layer="21"/>
 <wire x1="-1.65" y1="-0.85" x2="-1.65" y2="0.85" width="0.127" layer="21"/>
 <text x="0" y="0" size="0.635" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="MST-FUSE" library_version="149" library_locally_modified="yes">
+<wire x1="-4.2" y1="2.15" x2="-4.2" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="2.15" x2="4.2" y2="2.15" width="0.127" layer="21"/>
+<wire x1="4.2" y1="2.15" x2="4.2" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="4.2" y1="-2.15" x2="-4.2" y2="-2.15" width="0.127" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1.1"/>
+<pad name="2" x="2.54" y="0" drill="1.1"/>
+<text x="0" y="0" size="1.5" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -517,8 +527,8 @@ reDesign</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="IRM-05" urn="urn:adsk.eagle:package:52043181/1" type="box" library_version="2">
-<description>&lt;a href = https://www.mean-well.ru/uploads/files/datasheets/IRM-05-12.pdf&gt;datasheet&lt;/a&gt;</description>
+<package3d name="IRM-05" urn="urn:adsk.eagle:package:52043181/2" type="model" library_version="3">
+<description>datasheet</description>
 <packageinstances>
 <packageinstance name="IRM-05"/>
 </packageinstances>
@@ -19711,19 +19721,6 @@ package type OT</description>
 </package>
 </packages>
 </library>
-<library name="tmp">
-<packages>
-<package name="MST-FUSE">
-<pad name="1" x="-2.54" y="0" drill="1.1"/>
-<pad name="2" x="2.54" y="0" drill="1.1"/>
-<text x="0" y="0" size="1.5" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
-<wire x1="-4.2" y1="2.15" x2="-4.2" y2="-2.15" width="0.127" layer="21"/>
-<wire x1="-4.2" y1="2.15" x2="4.2" y2="2.15" width="0.127" layer="21"/>
-<wire x1="4.2" y1="2.15" x2="4.2" y2="-2.15" width="0.127" layer="21"/>
-<wire x1="4.2" y1="-2.15" x2="-4.2" y2="-2.15" width="0.127" layer="21"/>
-</package>
-</packages>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20147,9 +20144,11 @@ package type OT</description>
 <attribute name="MANF#" value="LL4148-GS08" x="-37.4" y="-24.52" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="32.5" y="45" size="1" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
-<element name="F1" library="tmp" package="MST-FUSE" value="1.6A" x="7.26" y="73.75" smashed="yes">
-<attribute name="NAME" x="12.76" y="73.75" size="1.5" layer="25" font="vector" ratio="12" align="center"/>
-<attribute name="PACKAGE" value="PBF-4" x="33.93" y="8.98" size="1.778" layer="27" display="off"/>
+<element name="F1" library="rc" library_urn="urn:adsk.eagle:library:2539423" package="MST-FUSE" value="1.6A" x="7.26" y="73.75" locked="yes" smashed="yes">
+<attribute name="MANF" value="Multicomp" x="7.26" y="73.75" size="1.778" layer="27" display="off"/>
+<attribute name="MANF#" value="MST 1.6A 250V" x="7.26" y="73.75" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="12.76" y="73.75" locked="yes" size="1.5" layer="25" font="vector" ratio="12" align="center"/>
+<attribute name="PACKAGE" value="PBF-4" x="33.93" y="8.98" locked="yes" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F2" library="rc" library_urn="urn:adsk.eagle:library:2539423" package="F1206" value="MF-NSMF050-2" x="30" y="11.25" smashed="yes" rot="MR90">
 <attribute name="MANF" value="Bourns" x="-47.47" y="41.73" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -20207,10 +20206,10 @@ package type OT</description>
 <attribute name="MANF#" value="" x="64.97" y="85.51" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="16.75" y="5.5" size="1" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
-<element name="MODULE2" library="ac-dc" library_urn="urn:adsk.eagle:library:51565678" package="IRM-05" package3d_urn="urn:adsk.eagle:package:52043181/1" value="IRM-05-12" x="18" y="48.65" smashed="yes" rot="R90">
-<attribute name="MANF" value="Meanwell" x="31.97" y="85.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANF#" value="IRM-05-12" x="31.97" y="85.48" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="4" y="56.4" size="2" layer="25" font="vector" ratio="12" rot="R90" align="center"/>
+<element name="MODULE2" library="ac-dc" library_urn="urn:adsk.eagle:library:51565678" package="IRM-05" package3d_urn="urn:adsk.eagle:package:52043181/2" value="IRM-05-12" x="18" y="48.65" locked="yes" smashed="yes" rot="R90">
+<attribute name="MANF" value="Meanwell" x="31.97" y="85.48" locked="yes" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANF#" value="IRM-05-12" x="31.97" y="85.48" locked="yes" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="4" y="56.4" locked="yes" size="2" layer="25" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="Q1" library="misc" library_urn="urn:adsk.eagle:library:5347860" package="SOT23B-3" package3d_urn="urn:adsk.eagle:package:1040193/5" value="BCR133" x="46" y="46.25" smashed="yes" rot="MR0">
 <attribute name="MANF" value="INFINEON TECHNOLOGIES AG." x="-3.53" y="-26.14" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -20496,7 +20495,7 @@ package type OT</description>
 <attribute name="MANF#" value="B1212S-1WR3" x="84.77" y="-39.98" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="12.75" y="20" size="1.5" layer="25" font="vector" ratio="12" align="center"/>
 </element>
-<element name="U5" library="linear regulators" library_urn="urn:adsk.eagle:library:2541155" package="SOIC8" package3d_urn="urn:adsk.eagle:package:20898192/5" value="L78L05ACD13TR" x="33" y="18" smashed="yes" rot="MR270">
+<element name="U5" library="linear regulators" library_urn="urn:adsk.eagle:library:2541155" package="SOIC8" package3d_urn="urn:adsk.eagle:package:20898192/5" override_package3d_urn="urn:adsk.eagle:package:20898192/7" override_package_urn="urn:adsk.eagle:footprint:4771000/5" value="L78L05ACD13TR" x="33" y="18" smashed="yes" rot="MR270">
 <attribute name="DIGIKEY#" value="497-1182-1-ND" x="95.23" y="-37.88" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MANF" value="STMicroelectronics" x="95.23" y="-37.88" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MANF#" value="L78L05ACD13TR" x="95.23" y="-37.88" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -21169,6 +21168,11 @@ of those online libraries will not be understood (or retained)
 with this version.
 </note>
 <note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
+</note>
+<note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
@@ -21177,6 +21181,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
